@@ -1,0 +1,14 @@
+@charset "UTF-8";
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family:'BIZ UDP Gothic';
+    line-height: 1.5;
+    color: #432;
+}
+
+a {
+    text-decoration: none;
+}
