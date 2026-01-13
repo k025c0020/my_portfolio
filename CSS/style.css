@@ -3,12 +3,142 @@ html {
     font-size: 100%;
 }
 
+.page-title{
+    font-family: 'Google Sans Flex';
+    font-weight: 600;
+    justify-content: flex-start;
+    text-align:left;
+}
+
+
 body {
-    font-family:'BIZ UDP Gothic';
+    font-family: 'Noto Sans JP';
+    font-weight: 400;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 20px;
+    text-align: center;
+}
+
+.page-header{
+    padding-top: .5rem;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+h1, h2, h3 {
+    font-family:'IBM Plex Sans JP';
     line-height: 1.5;
     color: #432;
+    text-align: center;
+}
+
+.intro{
+    margin: 1%;
+    padding: 1%;
 }
 
 a {
     text-decoration: none;
+    color: teal;
+}
+
+.wrapper{
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.req{
+    color:crimson;
+}
+
+/*フォームの設定*/
+.form{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input, textarea{
+    width: 300px;
+    height: auto;
+    border-color:#432;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+textarea{
+    height: 100px;
+}
+
+.note{
+    font-size: small;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    grid-template-columns: 2.5fr 2fr 2fr;
+    gap: 10px;
+    max-width: fit-content;
+}
+
+.items{
+    margin: 20px;
+    padding: 40px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    gap: 20px;
+}
+
+.large-item{
+    margin: 30px;
+    padding: 50px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    gap: 10%;
+}
+
+.footer{
+    background-color: black;
+    text-align: center;
+    font-size: small;
+    color: lightgrey;
+    margin-top: 20px;
+}
+
+.grid{
+    display: grid;
+    gap: 2rem 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+.item img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/*パソコン用の表示設定*/
+@media screen and (min-width: 768px){
+    .main-nav li{
+        display: inline;
+    }
+
 }

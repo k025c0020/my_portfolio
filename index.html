@@ -12,22 +12,51 @@
         <!--Google FontsからNoto Sans JP / IBM Plex Sans / Open Sansをそれぞれ使用-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=IBM+Plex+Sans+JP&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=IBM+Plex+Sans+JP&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
         <!--自分のCSS-->
         <link rel="stylesheet" href="CSS/style.css">
     </head>
     <body>
-        <h1>My Portfolio</h1>
-        <p>ポートフォリオへようこそ。自己紹介や作成したものを確認することができます。</p>
-        <p>※このサイトは学習目的で作成されたものです。実際に問い合わせ等を行うことはできません。</p>
-
-        <h2>About Me</h2>
-        <p>自己紹介。</p>
-
-        <h2>Projects</h2>
-        <p>作品紹介へのリンクを記載。</p>
-
-        <h2>Contact</h2>
-        <p>お問い合わせフォームへのリンク。</p>
+        <header class="wrapper">
+            <h1 class="page-title">My Portfolio</h1>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href=project.html>Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="center">ポートフォリオへようこそ。自己紹介や作成したものを確認することができます。</p>
+        <p class="note">※このサイトは学習目的で作成されたものです。実際に問い合わせ等を行うことはできません。<br>なお、将来的にフォームの送信を可能としたバージョンの公開を予定しております。</p>
+        </header>
+        <div class="intro">
+            <h1>Welcome to my site!</h1>
+            <p>ポートフォリオサイトへようこそ。ここでは、簡易な自己紹介やプログラムを見たり、お問い合わせを行うことができます。 </p>
+        </intro>
+        <div class="large-item">
+            <h1>About Me</h1>
+            <h2 class="title"></h2>
+            <p></p>
+        </div>
+        <div class="container">
+            <div class="items">
+                <a class="btn" href="project.html">
+                    <h2>Projects</h2>
+                    <p>作品紹介へのリンクを記載。</p>
+                    <p>Qiita、GitHubといったページへもここからアクセスできます。</p>
+                </a>
+            </div>
+            <div class="items">
+                <a class="btn" href="contact.html">
+                    <h2>Contacts</h2>
+                    <p>お問い合わせフォームへ。(ダミーのため、入力しても送信はされません。)</p>
+                    <p>直接の連絡を希望される方は、ページ末尾のメールアドレスよりご連絡ください。</p>
+                </a>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; Kyogo Yokoyama</p>
+            <p><b>メールはこちらへ。:</b> k025c0020@g.neec.ac.jp</p>
+        </footer>
     </body>
 </html>
