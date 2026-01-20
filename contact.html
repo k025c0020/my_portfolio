@@ -12,9 +12,9 @@
         <!--Google FontsからNoto Sans JP / IBM Plex Sans / Open Sansをそれぞれ使用-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=IBM+Plex+Sans+JP&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=IBM+Plex+Sans+JP&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <!--自分のCSS-->
-        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
@@ -23,14 +23,13 @@
         <nav>
             <ul class="main-nav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href=project.html>Projects</a></li>
+                <li><a href="project.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
-        <h1>お問い合わせフォーム / Contact Me</h1>
-        <p>※このサイトは学習目的で作成されたものです。<br>実際に問い合わせ等を行うことはできません。</p>
-        <p></p>
+        <h1 class="page-title">お問い合わせフォーム / Contact Me</h1>
+        <p>※このサイトは学習目的で作成されたものです。<br>実際に問い合わせ等を行うことはできません。ページ下部のメールアドレスよりご連絡ください。</p>
         <form action="" method="post">
                 <p> お名前 (Your Name) <span class="req">必須</span> <br>
                     <input type="text" name="name" class="textbox" placeholder="姓と名の間に半角スペースを空けてください"> <br>
@@ -57,7 +56,7 @@
                 </p>
 
                 <p>
-                    <input type="submit" value="送信 / Submit">
+                    <input class="btn form-button" type="submit" value="送信 / Submit">
                 </p>
         </form>
         <footer>

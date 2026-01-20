@@ -12,43 +12,75 @@
         <!--Google FontsからNoto Sans JP / IBM Plex Sans / Open Sansをそれぞれ使用-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=IBM+Plex+Sans+JP&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=IBM+Plex+Sans+JP&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <!--自分のCSS-->
-        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="wrapper">
             <h1 class="page-title">My Portfolio</h1>
+        </header>
         <nav>
             <ul class="main-nav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href=project.html>Projects</a></li>
+                <li><a href="project.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <p class="center">ポートフォリオへようこそ。自己紹介や作成したものを確認することができます。</p>
-        <p class="note">※このサイトは学習目的で作成されたものです。実際に問い合わせ等を行うことはできません。<br>なお、将来的にフォームの送信を可能としたバージョンの公開を予定しております。</p>
-        </header>
         <div class="intro">
             <h1>Welcome to my site!</h1>
             <p>ポートフォリオサイトへようこそ。ここでは、簡易な自己紹介やプログラムを見たり、お問い合わせを行うことができます。 </p>
+            <p>※このサイトは学習目的で作成されたものです。実際に問い合わせを行うことはできません。</p>
+            <p>恐れ入りますが、ページ最下部のメールアドレスより直接ご連絡ください。</p>
         </intro>
         <div class="large-item">
             <h1>About Me</h1>
-            <h2 class="title"></h2>
-            <p></p>
+            <h2 class="page-title"></h2>
+            <p>ポートフォリオページへアクセスしていただき、ありがとうございます。</p>
+            <p>このサイトでは、私が開発したプログラムや、執筆したブログ等を紹介していきます。</p>
+
+            <h3 class="page-title">Profiles</h3>
+            <table class="introduce">
+                <tr>
+                    <th>名前</th>
+                    <td>名前</td>
+                </tr>
+                <tr>
+                    <th>生年月日</th>
+                    <td>2007/02/10</td>
+                </tr>
+                <tr>
+                    <th>目標</th>
+                    <td>ITを活用して、生活を見えないところで支え、そして便利にしていくこと。</td>
+                </tr>
+                <tr>
+                    <th>主なスキル/取得した資格</th>
+                    <td>
+                        <p>J検 基本スキル & システムデザインスキル</p>
+                        <p>Python3エンジニア認定 基礎試験</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>主な経歴</th>
+                    <td>
+                        <p>2022年4月、埼玉県立川越工業高等学校 化学科に入学。</p>
+                        <p>2025年3月、埼玉県立川越工業高等学校 化学科を卒業し、<br>同年4月から日本工学院専門学校 ITカレッジ / ITスペシャリスト科に入学。以降IT技術を学習中。</p>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <div class="container">
-            <div class="items">
-                <a class="btn" href="project.html">
-                    <h2>Projects</h2>
+        <div class="index-container">
+            <div class="btn index-items">
+                <a href="project.html">
+                    <h2 class="index-name">Projects</h2>
                     <p>作品紹介へのリンクを記載。</p>
                     <p>Qiita、GitHubといったページへもここからアクセスできます。</p>
                 </a>
             </div>
-            <div class="items">
-                <a class="btn" href="contact.html">
-                    <h2>Contacts</h2>
+
+            <div class="btn index-items">
+                <a href="contact.html">
+                    <h2 class="index-name">Contacts</h2>
                     <p>お問い合わせフォームへ。(ダミーのため、入力しても送信はされません。)</p>
                     <p>直接の連絡を希望される方は、ページ末尾のメールアドレスよりご連絡ください。</p>
                 </a>
@@ -56,7 +88,7 @@
         </div>
         <footer>
             <p>&copy; Kyogo Yokoyama</p>
-            <p><b>メールはこちらへ。:</b> k025c0020@g.neec.ac.jp</p>
+            <p><b>メール:</b> k025c0020@g.neec.ac.jp</p>
         </footer>
     </body>
 </html>
