@@ -4,7 +4,7 @@ html {
 }
 
 /*ページタイトルの設定*/
-.page-title{
+.page-title {
     font-family: 'Google Sans Flex';
     font-weight: 600;
     justify-content: flex-start;
@@ -27,13 +27,6 @@ body {
 .main-nav{
     margin-right: 20px;
     margin-bottom: 40px;
-}
-
-.page-header{
-    padding-top: .5rem;
-}
-
-.main-nav{
     font-family: 'Open Sans';
     display: flex;
     justify-content: flex-end;
@@ -41,7 +34,17 @@ body {
     font-size: 1.5rem;
     list-style: none;
 }
+.main-nav, a{
+    transition: 0.3s ease;
+}
+.main-nav, a:hover{
+    transition: 0.3s ease;
+    color: teal;
+}
 
+.page-header{
+    padding-top: .5rem;
+}
 h1, h2, h3 {
     font-family:'IBM Plex Sans JP';
     line-height: 1.5;
